@@ -72,10 +72,18 @@ const PokemonList = () => {
         </div>
       )}
       <div style={{ textAlign: "center", marginTop: "20px" }}>
-        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
+        <button
+          type="button"
+          onClick={handlePreviousPage}
+          disabled={currentPage === 1}
+        >
           Previous
         </button>
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+        <button
+          type="button"
+          onClick={handleNextPage}
+          disabled={currentPage === totalPages}
+        >
           Next
         </button>
       </div>
